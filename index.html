@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingram School of Engineering — Nav Prototype</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="site-header__inner">
+      <div class="site-header__logo">
+        <img
+          src="logo.png"
+          alt="Texas State University logo"
+          width="161"
+          height="36"
+        >
+      </div>
+
+      <p class="site-header__site-name">Ingram School of Engineering</p>
+
+      <div class="site-header__toolbar">
+        <div class="site-header__search-group" id="search-container">
+          <div class="site-header__search-toggle">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <span class="site-header__search-label">Search</span>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="site-header__menu-btn" type="button" id="open-drawer-btn"
+      aria-controls="nav-drawer" aria-expanded="false" aria-label="Open navigation menu">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        <span>Menu</span>
+      </a>
+    </div>
+  </header>
+
+  <nav class="site-subnav" aria-label="Section navigation">
+    <ul class="site-subnav__list">
+      <li><a href="#" class="site-subnav__link">About the School</a></li>
+      <li><a href="#" class="site-subnav__link">Degrees & Programs</a></li>
+      <li><a href="#" class="site-subnav__link">Current Students</a></li>
+      <li><a href="#" class="site-subnav__link">Facilities</a></li>
+      <li><a href="#" class="site-subnav__link">Senior Design</a></li>
+      <li><a href="#" class="site-subnav__link">Cooperative Education Program</a></li>
+      <li><a href="#" class="site-subnav__link">Forms & Resources</a></li>
+      <li><a href="#" class="site-subnav__link">People</a></li>
+    </ul>
+  </nav>
+
+<main class="page-main">
+  <div class="hero">
+    <p class="hero__breadcrumb" id="page-breadcrumb">College of Science and Engineering</p>
+    <h1 class="hero__title" id="page-title">Ingram School of Engineering</h1>
+    <div class="hero__accent" aria-hidden="true"></div>
+  </div>
+</main>
+
+  <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true" hidden></div>
+
+  <aside class="nav-drawer" id="nav-drawer" aria-hidden="true" hidden>
+    <div class="nav-drawer__viewport">
+      <div class="drawer-content-slider" id="drawer-slider">
+
+        <section class="menu-panel-main" aria-label="Main menu panel">
+          <div class="drawer-header">
+            <div class="drawer-header__brand">
+              <span class="drawer-header__brand-title">Ingram School of Engineering</span>
+            </div>
+            <button
+              class="drawer-header__close"
+              type="button"
+              id="close-drawer-btn"
+              aria-label="Close navigation menu"
+            >
+              <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+              <span>Close</span>
+            </button>
+          </div>
+
+          <div class="drawer-secondary">
+            <ul class="nav-list" role="list">
+            </ul>
+          </div>
+
+          <div class="drawer-tertiary" id="tertiary-main">
+            <a href="#" class="cta-btn">Programs</a>
+            <a href="#" class="cta-btn">Research</a>
+            <a href="#" class="cta-btn">Request info</a>
+            <a href="#" class="cta-btn">Contact us</a>
+          </div>
+
+          <div class="drawer-search" id="search-main">
+            <button class="search-btn" type="button">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              <span>Search</span>
+            </button>
+          </div>
+
+          <div class="drawer-footer">
+            <div class="drawer-footer__badge">
+              <img src="vert-logo.png" alt="TXST Logo" />
+            </div>
+            <div class="drawer-footer__links">
+              <a href="#" class="drawer-footer__link">Visit</a>
+              <a href="#" class="drawer-footer__link">Apply</a>
+              <a href="#" class="drawer-footer__link">Give</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="menu-panel-sub" aria-label="Sub menu panel">
+          <div class="drawer-header drawer-header--sub">
+            <div class="drawer-header__brand">
+              <span class="drawer-header__brand-title">Ingram School of Engineering</span>
+            </div>
+            <button
+              class="drawer-header__close"
+              type="button"
+              id="close-drawer-btn-sub"
+              aria-label="Close navigation menu"
+            >
+              <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+              <span>Close</span>
+            </button>
+          </div>
+
+          <div class="drawer-subpanel-title-row">
+            <button class="drawer-subpanel-back" type="button" id="back-btn" aria-label="Back to main menu">
+              <span class="drawer-subpanel-back-icon" aria-hidden="true">
+                <i class="fa-solid fa-angle-left"></i>
+              </span>
+              <span class="drawer-subpanel-back-label">Ingram School of Engineering</span>
+            </button>
+          </div>
+
+          <div class="drawer-secondary">
+            <ul class="nav-list-sub" role="list">
+            </ul>
+          </div>
+
+          <div class="drawer-tertiary" id="tertiary-sub" hidden>
+            <a href="/request-info" class="cta-btn">Programs</a>
+            <a href="/students" class="cta-btn">Research</a>
+            <a href="/faculty" class="cta-btn">Request info</a>
+            <a href="/profile-data" class="cta-btn">Contact us</a>
+          </div>
+
+          <div class="drawer-search" id="search-sub">
+            <button class="drawer-back-btn" type="button" aria-label="Back to main menu">
+              <i class="fa-solid fa-angles-left" aria-hidden="true"></i>
+              <span>Back to Main Menu</span>
+            </button>
+            <button class="search-btn" type="button">
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+              <span>Search</span>
+            </button>
+          </div>
+
+          <div class="drawer-footer">
+            <div class="drawer-footer__badge">
+              <img src="vert-logo.png" alt="TXST Logo" />
+            </div>
+            <div class="drawer-footer__links">
+              <a href="#" class="drawer-footer__link">Visit</a>
+              <a href="#" class="drawer-footer__link">Apply</a>
+              <a href="#" class="drawer-footer__link">Give</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </aside>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
